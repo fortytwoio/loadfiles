@@ -1,6 +1,6 @@
 {
   "name": "loadfiles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Load every file from a given directory. ",
   "main": "fileloader.js",
   "scripts": {
