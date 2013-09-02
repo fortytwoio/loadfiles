@@ -4,7 +4,7 @@ loadfiles
 Load every file from a given directory
 
 ```javascript
-var fileloader = require("fileloader")
+var fileloader = require("loadfiles")
 var loadFilesFor = fileloader(__dirname, 'js')
 ```
 
