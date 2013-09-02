@@ -8,18 +8,18 @@
 
   module.exports = function(basedir, allowedExtension) {
     return function(domain) {
-      var data, filePath, files;
-      filePath = path.normalize(basedir + '/' + domain);
+      var basePath, data, files;
+      basePath = path.normalize(basedir + '/' + domain);
       data = module.exports = {};
-      files = fs.readdirSync(filePath);
+      files = fs.readdirSync(basePath);
       files.forEach(function(file) {
-        var extension, fileName;
+        var extension, fileName, filePath;
         extension = path.extname(file);
         fileName = path.basename(file, extension);
         if (extension !== ("." + allowedExtension)) {
           return;
         }
-        filePath = "./" + fileName;
+        filePath = basePath + "/" + fileName;
         console.log("Adding " + domain + " " + fileName + " " + extension);
         return data[fileName] = require(filePath);
       });
