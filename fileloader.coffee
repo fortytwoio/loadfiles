@@ -12,7 +12,7 @@ module.exports = (basedir, allowedExtension) ->
 
 			# Check if file is a .js file. Since no other type is valid in our case
 			return  if extension isnt ".#{allowedExtension}"
-			filePath = filePath + "/" + fileName
+			filePath = "./" + fileName
 			console.log "Adding #{domain} #{fileName} #{extension}"
 			data[fileName] = require(filePath)
 		data

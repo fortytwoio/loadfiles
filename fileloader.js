@@ -19,7 +19,7 @@
         if (extension !== ("." + allowedExtension)) {
           return;
         }
-        filePath = filePath + "/" + fileName;
+        filePath = "./" + fileName;
         console.log("Adding " + domain + " " + fileName + " " + extension);
         return data[fileName] = require(filePath);
       });
