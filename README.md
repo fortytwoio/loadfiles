@@ -4,10 +4,9 @@ loadfiles
 Load every file from a given directory
 
 ```javascript
-var fileloader = require("./libs/fileloader")
+var fileloader = require("fileloader")
 var loadFilesFor = fileloader(__dirname, 'js')
 ```
-
 
 #### An Array with all  Model Objects
 var models = loadFilesFor('models')
@@ -19,8 +18,10 @@ var controllers = loadFilesFor('controllers')
 var middlewares = loadFilesFor('middlewares')
 
 if you have directories like
+```javascript
 ./models/items.js
-./controller/item.js
+./controller/items.js
+```
 
 you may use it like this:
 ```javascript

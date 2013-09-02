@@ -2,7 +2,7 @@
   "name": "loadfiles",
   "version": "0.0.1",
   "description": "Load every file from a given directory. ",
-  "main": "index.js",
+  "main": "fileloader.js",
   "scripts": {
     "test": "mocha"
   },
