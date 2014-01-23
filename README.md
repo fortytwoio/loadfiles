@@ -1,32 +1,52 @@
 loadfiles
 =========
 
-Load every file from a given directory
+
+## Usage
+
+### Given that you have a directory structure like...
+
+```
+app/models/items.js
+app/controllers/items.js
+app/middlewares/auth.js
+app/index.js
+```
+
+
+### ...you can use it like:
+
 
 ```javascript
+/* app/index.js */
+
+// require fileloader module
 var fileloader = require("loadfiles")
-var loadFilesFor = fileloader(__dirname, 'js')
-```
 
-#### An Array with all  Model Objects
-var models = loadFilesFor('models')
+// this inits a load with the basepath set to './app'
+var load = fileloader(__dirname, 'js')
 
-#### Require all available controllers
-var controllers = loadFilesFor('controllers')
+// load all '.js' from __dirname + '/models'
+var models = load('models')
 
-#### Require all available middlewares
-var middlewares = loadFilesFor('middlewares')
+//load all '.js' from __dirname + '/controllers'
+var controllers = load('controllers')
 
-if you have directories like
-```javascript
-./models/items.js
-./controller/items.js
-```
+// load all '.js' from __dirname + '/middlewares'
+var middlewares = load('middlewares')
 
-you may use it like this:
-```javascript
-controllers.items.get()
+// you may then use it like this:
 models.items.get()
+controllers.items.index(request, response)
+middlewares.auth.isAuthenticated('userA')
+
+// or maybe like this
+bootstrap(controllers, models, middlewares)
+
 ```
+
+### Debug Output
+This module uses <https://github.com/visionmedia/debug> for logging. To controll output use these wildcards: DEBUG="loadfiles" or DEBUG="loadfiles:debug"
+
 
 

@@ -14,3 +14,4 @@ results
 .idea/*
 
 npm-debug.log
+node_modules

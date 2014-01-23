@@ -1,8 +1,8 @@
 {
   "name": "loadfiles",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Load every file from a given directory. ",
-  "main": "fileloader.js",
+  "main": "fileloader.coffee",
   "scripts": {
     "test": "mocha"
   },
@@ -16,16 +16,19 @@
     "directory",
     "mvc"
   ],
-	"contributors": [
-		{
-			"name": "Thomas Fritz",
-			"email": "fritztho@gmail.com",
-			"url": "http://fritzthomas.com"
-		}
-	],
+  "contributors": [
+    {
+      "name": "Thomas Fritz",
+      "email": "fritztho@gmail.com",
+      "url": "http://fritzthomas.com"
+    }
+  ],
   "author": "Michael Hettegger <michael.hettegger@gmx.net> (https://github.com/isery)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/isery/loadfiles/issues"
+  },
+  "dependencies": {
+    "debug": "~0.7.4"
   }
 }
