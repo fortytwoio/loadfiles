@@ -1,11 +1,6 @@
-loadfiles
-=========
-
-
 ## Usage
 
 ### Given that you have a directory structure like...
-
 ```
 app/models/items.js
 app/controllers/items.js
@@ -14,9 +9,7 @@ app/index.js
 ```
 
 
-### ...you can use it like:
-
-
+### ...you can then use it like:
 ```javascript
 /* app/index.js */
 
@@ -42,11 +35,15 @@ middlewares.auth.isAuthenticated('userA')
 
 // or maybe like this
 bootstrap(controllers, models, middlewares)
-
 ```
 
 ### Debug Output
-This module uses <https://github.com/visionmedia/debug> for logging. To controll output use these wildcards: DEBUG="loadfiles" or DEBUG="loadfiles:debug"
+This module uses <https://github.com/visionmedia/debug> for logging. To controll output use these wildcards:
+```bash
+DEBUG="loadfiles" node index.js
+#or
+DEBUG="loadfiles:debug" node index.js
+```
 
 
 
