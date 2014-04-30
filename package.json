@@ -1,34 +1,35 @@
 {
-  "name": "loadfiles",
-  "version": "0.1.0",
-  "description": "Load every file from a given directory. ",
-  "main": "fileloader.coffee",
-  "scripts": {
+  "name"        : "loadfiles",
+  "version"     : "0.1.1",
+  "description" : "Load every file from a given directory. ",
+  "main"        : "index.js",
+  "scripts"     : {
     "test": "mocha"
   },
-  "repository": {
+  "repository"  : {
     "type": "git",
-    "url": "https://github.com/isery/loadfiles"
+    "url" : "https://github.com/isery/loadfiles"
   },
-  "keywords": [
-    "files",
-    "load",
-    "directory",
-    "mvc"
+  "keywords"    : [
+    "files", "load", "directory", "mvc"
   ],
   "contributors": [
     {
-      "name": "Thomas Fritz",
+      "name" : "Michael Hettegger",
+      "email": "michael.hettegger@gmx.net"
+    },
+    {
+      "name" : "Thomas Fritz",
       "email": "fritztho@gmail.com",
-      "url": "http://fritzthomas.com"
+      "url"  : "http://www.fritzthomas.com"
     }
   ],
-  "author": "Michael Hettegger <michael.hettegger@gmx.net> (https://github.com/isery)",
-  "license": "MIT",
-  "bugs": {
+  "author"      : "Michael Hettegger <michael.hettegger@gmx.net> (https://github.com/isery)",
+  "license"     : "MIT",
+  "bugs"        : {
     "url": "https://github.com/isery/loadfiles/issues"
   },
   "dependencies": {
-    "debug": "~0.7.4"
+    "debug": "^0.8.0"
   }
 }
