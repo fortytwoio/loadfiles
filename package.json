@@ -1,6 +1,6 @@
 {
   "name"        : "loadfiles",
-  "version"     : "0.1.1",
+  "version"     : "0.1.2",
   "description" : "Load every file from a given directory. ",
   "main"        : "index.js",
   "scripts"     : {
@@ -8,7 +8,7 @@
   },
   "repository"  : {
     "type": "git",
-    "url" : "https://github.com/isery/loadfiles"
+    "url" : "https://github.com/fortytwoio/loadfiles"
   },
   "keywords"    : [
     "files", "load", "directory", "mvc"
@@ -16,18 +16,18 @@
   "contributors": [
     {
       "name" : "Michael Hettegger",
-      "email": "michael.hettegger@gmx.net"
+      "email": "michael.hettegger@forty-two.io"
     },
     {
       "name" : "Thomas Fritz",
-      "email": "fritztho@gmail.com",
+      "email": "fritztho@forty-two.io",
       "url"  : "http://www.fritzthomas.com"
     }
   ],
-  "author"      : "Michael Hettegger <michael.hettegger@gmx.net> (https://github.com/isery)",
+  "author"      : "forty-two.io <mail@forty-two.io> (https://github.com/fortytwoio)",
   "license"     : "MIT",
   "bugs"        : {
-    "url": "https://github.com/isery/loadfiles/issues"
+    "url": "https://github.com/fortytwoio/loadfiles/issues"
   },
   "dependencies": {
     "debug": "^0.8.0"
